@@ -1,39 +1,40 @@
+import ProfileSection from "./ProfileSection"
+import { profileSectionData } from "./profileSectionData"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
+
 function TopSection() {
+
   return (
     <>
-      <main className="conntainer">
+      <main className="conntainer flex justify-between items-center h-21.5 px-20">
         {/* logo */}
         <section className="logo-conatiner">
           <img src="/public/Brand/logo-colored.png" alt="brand logo" />
         </section>
 
         {/* search bar */}
-        <section className="search-bar-container border border-amber-500">
-          <input type="search" name="cat-search" />
-          <select name="cat-dropdown">
-            <option value="All category">All category</option>
-          </select>
-          <button>Search</button>
-        </section>
+        <form onSubmit={(e) => e.preventDefault()} className="search-bar-container h-10 w-166.25 flex justify-between border-2 border-[#0D6EFD] rounded-[7px]">
+          <input type="search" name="cat-search" placeholder="Search" className="pl-3" />
+
+          {/* dropdown and search button */}
+          <div className="drop-btn relative flex justify-center border border-l-[#0D6EFD] border-r-0 border-y-0">
+            <select name="cat-dropdown" className="pl-3 pr-12 appearance-none">
+              <option value="All category">All category</option>
+            </select>
+            <span className="inter-events-none absolute left-27.5 top-1/2 -translate-y-1/2 text-[#8B96A5]">
+              <FontAwesomeIcon icon={faChevronDown} />
+            </span>
+
+            <button className="bg-linear-to-r from-[#127FFF] to-[#0067FF] text-white w-25 cursor-pointer">Search</button>
+          </div>
+        </form>
 
         {/* profile options */}
-        <section className="profile-conatiner">
-          <button className="profile">
-            <img src="/public/icons/profile.svg" alt="profile button" />
-            <span>Profile</span>
-          </button>
-          <button className="message">
-            <img src="/public/icons/message.svg" alt="message button" />
-            <span>Message</span>
-          </button>
-          <button className="orders">
-            <img src="/public/icons/orders.svg" alt="orders button" />
-            <span>Orders</span>
-          </button>
-          <button className="cart">
-            <img src="/public/icons/cart.svg" alt="cart button" />
-            <span>My cart</span>
-          </button>
+        <section className="profile-conatiner flex gap-[26.67px]">
+          {profileSectionData.map((data) => (
+            <ProfileSection key={data.id} icon={data.icon} bellowText={data.belowText} />
+          ))}
         </section>
       </main>
     </>
