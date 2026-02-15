@@ -34,9 +34,9 @@ function ManuSection() {
           <FontAwesomeIcon icon={faChevronDown} size='xs' />
         </span>
 
-        <button class="flex items-center gap-2 cursor-pointer">
+        <button className="flex items-center gap-2 cursor-pointer">
           Ship to
-          <img src="/flags/DE@2x.png" alt="Germany" class="w-4 h-4" />
+          <img src="/flags/DE@2x.png" alt="Germany" className="w-4 h-4" />
         </button>
         <span className="down-arrow text-[#8B96A5] absolute left-[104%] cursor-pointer">
           <FontAwesomeIcon icon={faChevronDown} size='xs' />
