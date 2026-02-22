@@ -4,7 +4,7 @@ import SignupSection from './Signup/SignupSection'
 function HeroSection() {
     return (
         // 
-        <div className='flex flex-col items-center py-3.75'>
+        <div className='flex flex-col items-center '>
             <div className="hero-container flex justify-center gap-3.75 w-295 border border-[#DEE2E7] rounded-md bg-white py-3.75">
 
                 {/* links bar */}
