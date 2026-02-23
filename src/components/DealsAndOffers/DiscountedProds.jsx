@@ -1,6 +1,6 @@
 function DiscountedProds({ id, prodImg, prodName, discount }) {
   return (
-    <div id={id} className="prod-card-container flex flex-col justify-center items-center gap-3 h-58.75 w-44.75 border-r border-r-[#DEE2E7]">
+    <div id={id} className="prod-card-container flex flex-col justify-center items-center gap-3 h-60 w-44.75 border-r border-r-[#DEE2E7] last:border-r-0">
       <div className="img-container h-[121.33px]">
         <img src={prodImg} alt={`${prodName} image`} />
       </div>

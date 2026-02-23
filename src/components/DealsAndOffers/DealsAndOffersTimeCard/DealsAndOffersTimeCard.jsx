@@ -2,7 +2,7 @@ import TimeCard from "./TimeCard"
 
 function DealsAndOffersTimeCard() {
   return (
-    <div className="deals-and-offers-time-card w-73.75 h-60 leading-6 pl-5.25 pt-6.25 rounded-l-md border-r border-r-[#DEE2E7]">
+    <div className="deals-and-offers-time-card w-70.75 h-60 leading-6 pl-5.25 pt-6.25 rounded-l-md border-r border-r-[#DEE2E7]">
       <h2 className="text-[20px] font-semibold">Deals and offers</h2>
       <p className="text-[#8B96A5]">Hygiene equipments</p>
 
