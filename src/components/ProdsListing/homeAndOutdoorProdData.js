@@ -1,4 +1,4 @@
-export const prodCardData = [
+export const homeAndOutdoorProdData = [
         {
             id: "soft-chairs",
             prodName: "Soft chairs",

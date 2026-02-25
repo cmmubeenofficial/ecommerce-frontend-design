@@ -10,8 +10,8 @@ function ProdCard({ id, prodName, price, prodImg }) {
             </div>
 
             {/* image container */}
-            <div className="img-container pt-10">
-                <img className="w-[75.04px]" src={`${prodImg}.png`} alt={`${prodName} image`} />
+            <div className="img-container pt-10 pr-2">
+                <img className="w-15" src={`${prodImg}.png`} alt={`${prodName} image`} />
             </div>
         </div>
 
