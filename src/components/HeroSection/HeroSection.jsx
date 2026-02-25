@@ -11,7 +11,7 @@ function HeroSection() {
             </div>
 
             {/* banner image */}
-            <div className="banner-img w-166.25 h-90 bg-[url('./Image/backgrounds/hero-banner.png')] bg-cover bg-center bg-no-repeat bg-blue-300 pt-16.25 pl-12.25">
+            <div className="banner-img w-166.25 h-90 bg-[url('./Image/backgrounds/hero-banner.png')] bg-cover bg-center bg-no-repeat pt-16.25 pl-12.25">
                 <h2 className='text-[28px]'>Latest trending</h2>
                 <h2 className='text-[32px] font-bold'>Electronic items</h2>
                 <div className="btn-container pt-4">
