@@ -1,5 +1,4 @@
-import HomePage from "./HomePage"
-
+import HomePage from "../../Pages/HomePage"
 
 function ComponentsRender() {
   return (
