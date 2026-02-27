@@ -8,7 +8,7 @@ function InquiryPage() {
       {/* text content container */}
       <div className="text-content-container h-34.75 w-110 text-white pl-8">
         <h2 className="text-[32px] font-semibold leading-10 pb-3.5">An easy way to send requests to all suppliers</h2>
-        <p className="leading-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        <p className="leading-5 text-[16px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
       </div>
 
       {/* send inquiry container */}

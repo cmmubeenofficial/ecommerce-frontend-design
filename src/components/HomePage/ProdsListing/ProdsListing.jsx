@@ -6,8 +6,11 @@ function ProdsListing({ title, bgImg, products }) {
 
             {/* Source Now Button Card */}
             <div className={`source-now w-70.75 border-r border-r-[#E0E0E0]
-            bg-[url('/Image/backgrounds/${bgImg}.png')] bg-cover bg-center bg-no-repeat
-            pl-4.25`}>
+             bg-cover bg-center bg-no-repeat
+            pl-4.25`}
+
+                style={{ backgroundImage: `url(/Image/backgrounds/${bgImg}.png)` }}
+            >
                 <h2 className="text-[20px] font-semibold pb-4.25 pt-5.25">{title[0]} <br /> {title[1]} <br /> {title ? title[2] : ""}</h2>
                 <button className="font-medium h-10 w-30.75 bg-white border border-white rounded-md cursor-pointer">Source now</button>
             </div>

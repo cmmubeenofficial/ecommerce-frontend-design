@@ -4,6 +4,7 @@ import InquiryPage from "../Components/HomePage/InquiryPage/InquiryPage"
 import { electronicsAndGadgets } from "../Components/HomePage/ProdsListing/electronicsAndGadgets"
 import { homeAndOutdoorProdData } from "../Components/HomePage/ProdsListing/homeAndOutdoorProdData"
 import ProdsListing from "../Components/HomePage/ProdsListing/ProdsListing"
+import RecomendedItems from "../Components/HomePage/RecomendedItems/RecomendedItems"
 
 function HomePage() {
     return (
@@ -17,7 +18,10 @@ function HomePage() {
             {/* Consumer Electronics and Gadgets */}
             <ProdsListing title={["Consumer", "electronics and", "gadgets"]} bgImg={"electronics-n-gadgets"} products={electronicsAndGadgets} />
 
+            {/* inquiry page */}
             <InquiryPage />
+
+            <RecomendedItems />
         </>
     )
 }
