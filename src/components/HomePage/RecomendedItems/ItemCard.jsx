@@ -1,7 +1,7 @@
 function ItemCard({ id, prodImg, price, description }) {
 
     return (
-        <div id={id} className="item-card-container border border-[#E0E0E0] h-77.5 w-55 rounded-md flex flex-col items-center justify-between py-4.5">
+        <div id={id} className="item-card-container bg-white border border-[#E0E0E0] h-77.5 w-55 rounded-md flex flex-col items-center justify-between py-4.5">
 
             {/* products image */}
             <div className="prod-img flex justify-center w-[172.44px]">

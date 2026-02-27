@@ -1,4 +1,5 @@
 import DealsAndOffers from "../Components/HomePage/DealsAndOffers/DealsAndOffers"
+import ExtraServices from "../Components/HomePage/ExtraServices/ExtraServices"
 import HeroSection from "../Components/HomePage/HeroSection/HeroSection"
 import InquiryPage from "../Components/HomePage/InquiryPage/InquiryPage"
 import { electronicsAndGadgets } from "../Components/HomePage/ProdsListing/electronicsAndGadgets"
@@ -21,7 +22,11 @@ function HomePage() {
             {/* inquiry page */}
             <InquiryPage />
 
+            {/* Recomended items */}
             <RecomendedItems />
+
+            {/* Our Extra Services */}
+            <ExtraServices />
         </>
     )
 }
