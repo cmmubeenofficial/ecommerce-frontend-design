@@ -6,6 +6,7 @@ import { electronicsAndGadgets } from "../Components/HomePage/ProdsListing/elect
 import { homeAndOutdoorProdData } from "../Components/HomePage/ProdsListing/homeAndOutdoorProdData"
 import ProdsListing from "../Components/HomePage/ProdsListing/ProdsListing"
 import RecomendedItems from "../Components/HomePage/RecomendedItems/RecomendedItems"
+import SuppliersByOrigin from "../Components/HomePage/SuppliersByOrigin/SuppliersByOrigin"
 
 function HomePage() {
     return (
@@ -27,6 +28,9 @@ function HomePage() {
 
             {/* Our Extra Services */}
             <ExtraServices />
+
+            {/* Suppliers By Origin */}
+            <SuppliersByOrigin />
         </>
     )
 }
