@@ -2,6 +2,7 @@ import DealsAndOffers from "../Components/HomePage/DealsAndOffers/DealsAndOffers
 import ExtraServices from "../Components/HomePage/ExtraServices/ExtraServices"
 import HeroSection from "../Components/HomePage/HeroSection/HeroSection"
 import InquiryPage from "../Components/HomePage/InquiryPage/InquiryPage"
+import Newsletter from "../Components/HomePage/Newsletter/Newsletter"
 import { electronicsAndGadgets } from "../Components/HomePage/ProdsListing/electronicsAndGadgets"
 import { homeAndOutdoorProdData } from "../Components/HomePage/ProdsListing/homeAndOutdoorProdData"
 import ProdsListing from "../Components/HomePage/ProdsListing/ProdsListing"
@@ -31,6 +32,9 @@ function HomePage() {
 
             {/* Suppliers By Origin */}
             <SuppliersByOrigin />
+
+            {/* Newsletter */}
+            <Newsletter />
         </>
     )
 }

@@ -1,9 +1,9 @@
-function OriginCard({ key, originData }) {
+function OriginCard({ id, originData }) {
 
     const { flagImg, originName, webURL } = originData
 
     return (
-        <div key={key} className="origin-card h-9 w-55.25 flex items-center gap-1.75">
+        <div key={id} className="origin-card h-9 w-55.25 flex items-center gap-1.75">
 
             {/* origin image */}
             <div className="img-container">
