@@ -2,13 +2,15 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import SelectedFilters from "./SelectedFilters"
 import { selectedFiltersData } from "./selectedFiltersData"
+import ProductCard from "./ProductCard"
+import { productCardData } from "./productCardData"
 
 function ProductListing() {
   return (
     <div className="product-listing-container flex flex-col gap-4.5">
 
       {/* top strip: items count + verified only + featured + grid + bar */}
-      <div className="top-strip-container flex items-center justify-between h-15.5 w-232.5 bg-white border border-[#DEE2E7] rounded-md px-3.5">
+      <div className="top-strip-container flex items-center justify-between h-15.5 w-230.25 bg-white border border-[#DEE2E7] rounded-md px-3.5">
         <h3>12,911 items in Mobile accessory</h3>
 
         {/* filters and grid container */}
@@ -52,6 +54,13 @@ function ProductListing() {
 
         {/* clear filter button */}
         <button className="text-[#0D6EFD] pl-2 cursor-pointer">Clear all filter</button>
+      </div>
+
+      {/* product cards */}
+      <div className="product-cards-container flex flex-wrap gap-4.5">
+        {productCardData.map(productDetail => (
+        <ProductCard key={productDetail.id} productDetails={productDetail} />
+      ))}
       </div>
     </div>
   )
