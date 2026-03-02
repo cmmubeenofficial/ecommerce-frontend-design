@@ -4,11 +4,16 @@ import { navLinksData } from './navLinksData'
 import NavLinks from './NavLinks'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import Newsletter from './Newsletter/Newsletter'
 
 
 function Footer() {
   return (
     <>
+
+      {/* newsletter */}
+      <Newsletter />
+
       {/* footer container */}
       <footer className='footer-container flex justify-between items-center px-20 h-64'>
 
