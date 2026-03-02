@@ -4,7 +4,7 @@ import DiscountedProds from "./DiscountedProds"
 
 function DealsAndOffers() {
     return (
-        <div className="deals-and-offers-container w-295 flex border border-[#DEE2E7] rounded-md bg-white">
+        <div className="deals-and-offers-container w-295 flex border border-[#DEE2E7] rounded-md bg-white overflow-hidden">
             <DealsAndOffersTimeCard />
             {dicountedProds.map(prod => (
                 <DiscountedProds key={prod.id} prodImg={prod.prodImg} prodName={prod.prodName} discount={prod.discount} />
