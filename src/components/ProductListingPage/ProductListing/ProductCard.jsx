@@ -1,13 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeart } from "@fortawesome/free-regular-svg-icons/faHeart"
 import RatingStars from "../../RatingStars/RatingStars"
+import { useNavigate } from "react-router-dom"
 
 function ProductCard({ id, productDetails }) {
 
+    // props distructuring
     const { productImg, dicountedPrice, actualPrice, rating, description } = productDetails
 
+    const navigate = useNavigate()
+
     return (
-        <div key={id} className="product-card h-101.25 w-73.75 border border-[#DEE2E7] bg-white rounded-md">
+        <div key={id} className="product-card h-101.25 w-73.75 border border-[#DEE2E7] bg-white rounded-md cursor-pointer"
+            onClick={() => navigate("/products/product-details")}
+        >
             {/* product image */}
             <div className="product-image flex justify-center items-center py-6 px-9 border-b border-[#EFF2F4]">
                 <img

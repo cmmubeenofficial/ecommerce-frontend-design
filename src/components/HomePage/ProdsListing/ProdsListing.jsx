@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom"
 import ProdCard from "./ProdCard"
 
 function ProdsListing({ title, bgImg, products }) {
+
+    const navigate = useNavigate()
+
     return (
         <div className="prods-listing-container flex w-295 border border-[#E0E0E0] rounded-md bg-white">
 
@@ -12,7 +16,10 @@ function ProdsListing({ title, bgImg, products }) {
                 style={{ backgroundImage: `url(/Image/backgrounds/${bgImg}.png)` }}
             >
                 <h2 className="text-[20px] font-semibold pb-4.25 pt-5.25">{title[0]} <br /> {title[1]} <br /> {title ? title[2] : ""}</h2>
-                <button className="font-medium h-10 w-30.75 bg-white border border-white rounded-md cursor-pointer">Source now</button>
+                <button 
+                className="font-medium h-10 w-30.75 bg-white border border-white rounded-md cursor-pointer"
+                onClick={() => navigate("/products")}
+                >Source now</button>
             </div>
 
             {/* products listing:  Home and Outdoor */}
