@@ -17,7 +17,7 @@ function ProductCard({ id, productDetails }) {
             {/* product image */}
             <div className="product-image flex justify-center items-center py-6 px-9 border-b border-[#EFF2F4]">
                 <img
-                    src={`/Image/produc-listing-page/${productImg}.png`}
+                    src={`/image/produc-listing-page/${productImg}.png`}
                     alt={`${description[0]} ${description[1]} image`}
                     className="h-[202.4px]"
                 />

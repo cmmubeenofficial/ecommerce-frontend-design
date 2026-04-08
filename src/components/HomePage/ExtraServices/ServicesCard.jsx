@@ -7,7 +7,7 @@ function ServicesCard({ id, cardData }) {
 
             {/* image of industry hub */}
             <div className="img-container overflow-hidden relative">
-                <img src={`/Image/backgrounds/${topImg}.png`} alt="industry hub image"
+                <img src={`/image/backgrounds/${topImg}.png`} alt="industry hub image"
                     className="contrast-200 brightness-75"
                 />
 

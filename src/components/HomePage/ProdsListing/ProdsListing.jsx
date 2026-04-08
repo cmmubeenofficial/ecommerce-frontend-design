@@ -13,7 +13,7 @@ function ProdsListing({ title, bgImg, products }) {
              bg-cover bg-center bg-no-repeat
             pl-4.25`}
 
-                style={{ backgroundImage: `url(/Image/backgrounds/${bgImg}.png)` }}
+                style={{ backgroundImage: `url(/image/backgrounds/${bgImg}.png)` }}
             >
                 <h2 className="text-[20px] font-semibold pb-4.25 pt-5.25">{title[0]} <br /> {title[1]} <br /> {title ? title[2] : ""}</h2>
                 <button 

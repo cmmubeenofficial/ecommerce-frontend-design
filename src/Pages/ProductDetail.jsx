@@ -40,11 +40,11 @@ const ProductDetail = () => {
 
   const relatedProducts = [
     { id: 1, name: "Xiaomi Redmi 8 Original", price: "$32.00-$40.00", img: "/alibaba/cloth/leather-wallet.png" },
-    { id: 2, name: "Xiaomi Redmi 8 Original", price: "$32.00-$40.00", img: "/Image/tech/watch.png" },
+    { id: 2, name: "Xiaomi Redmi 8 Original", price: "$32.00-$40.00", img: "/image/tech/watch.png" },
     { id: 3, name: "Xiaomi Redmi 8 Original", price: "$32.00-$40.00", img: "/alibaba/tech/headphone.png" },
     { id: 4, name: "Xiaomi Redmi 8 Original", price: "$32.00-$40.00", img: "/alibaba/cloth/canon-camera.png" },
     { id: 5, name: "Xiaomi Redmi 8 Original", price: "$32.00-$40.00", img: "/alibaba/tech/stainless-mug.png" },
-    { id: 6, name: "Xiaomi Redmi 8 Original", price: "$32.00-$40.00", img: "/Image/interior/home-appliance.png" },
+    { id: 6, name: "Xiaomi Redmi 8 Original", price: "$32.00-$40.00", img: "/image/interior/home-appliance.png" },
   ];
 
   return (

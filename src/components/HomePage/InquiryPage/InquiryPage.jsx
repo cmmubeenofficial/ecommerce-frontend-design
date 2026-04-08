@@ -3,7 +3,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 
 function InquiryPage() {
   return (
-    <div className="inquiry-page-container flex justify-between w-295 h-105 bg-[url('./Image/backgrounds/inquiry.png')] bg-cover bg-center bg-no-repeat pt-6.75">
+    <div className="inquiry-page-container flex justify-between w-295 h-105 bg-[url('/image/backgrounds/inquiry.png')] bg-cover bg-center bg-no-repeat pt-6.75">
 
       {/* text content container */}
       <div className="text-content-container h-34.75 w-110 text-white pl-8">
