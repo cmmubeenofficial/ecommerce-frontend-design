@@ -36,11 +36,11 @@ function ProductListing() {
 
             {/* grid view */}
             <div className="grid-view flex items-center justify-center bg-[#EFF2F4] h-10 w-9.5 border-r border-[#DEE2E7]">
-              <img src="/public/icons/grid-icon.svg" alt="grid icon" />
+              <img src="/icons/grid-icon.svg" alt="grid icon" />
             </div>
 
             <div className="bar-view flex items-center justify-center h-10 w-9.5">
-              <img src="/public/icons/bar-icon.svg" alt="bar icon" />
+              <img src="/icons/bar-icon.svg" alt="bar icon" />
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ function TopSection() {
       <main className="conntainer flex justify-between items-center h-21.5 px-20">
         {/* logo */}
         <section className="logo-conatiner">
-          <img src="/public/Brand/logo-colored.png" alt="brand logo" />
+          <img src="/Brand/logo-colored.png" alt="brand logo" />
         </section>
 
         {/* search bar */}

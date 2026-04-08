@@ -49,10 +49,10 @@ function Footer() {
         <section className="app-links flex flex-col gap-3 -mt-2.75">
           <h1 className="font-medium">Get app</h1>
           <button>
-            <a href="/"> <img src="/public/app/app_store.png" alt="app download button" /></a>
+            <a href="/"> <img src="/app/app_store.png" alt="app download button" /></a>
           </button>
           <button>
-            <a href="/"><img src="/public/app/android.png" alt="app download button" /></a>
+            <a href="/"><img src="/app/android.png" alt="app download button" /></a>
           </button>
         </section>
       </footer>
@@ -61,7 +61,7 @@ function Footer() {
       <section className="copywrite border border-[#DEE2E7] bg-[#EFF2F4] h-17 flex items-center justify-between px-20">
         <p className='text-[#606060]'>© 2023 Ecommerce.</p>
         <button className='flex items-center gap-1.5 cursor-pointer text-[#606060]'>
-          <img src="/public/flags/US@2x.png" alt="English" />
+          <img src="/flags/US@2x.png" alt="English" />
           English
           <FontAwesomeIcon icon={faChevronUp} size='sm' className='text-black' />
         </button>

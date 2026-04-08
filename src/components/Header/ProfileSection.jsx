@@ -3,7 +3,7 @@ import React from 'react'
 function ProfileSection({ icon, bellowText }) {
   return (
     <button className="flex flex-col justify-center items-center gap-2 cursor-pointer">
-      <img src={`icons/${icon}.svg`} alt={`${icon} button`} />
+      <img src={`/icons/${icon}.svg`} alt={`${icon} button`} />
       <span className='text-[#8B96A5] text-[12px]'>{bellowText}</span>
     </button>
   )

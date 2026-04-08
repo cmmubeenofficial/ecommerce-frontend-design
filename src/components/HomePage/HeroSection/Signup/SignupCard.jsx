@@ -7,7 +7,7 @@ function SignupCard() {
       {/* user icon + message */}
       <div className="icon-and-message flex items-center gap-5">
         <div className="user-icon h-11 w-11 bg-[#C6E2FF] flex items-end justify-center rounded-full">
-          <img src="/public/icons/user-icon.svg" alt="user profile icon" />
+          <img src="/icons/user-icon.svg" alt="user profile icon" />
         </div>
         <h3>Hi, user <br />let’s get stated</h3>
       </div>
