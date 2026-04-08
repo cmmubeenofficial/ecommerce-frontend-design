@@ -1,9 +1,9 @@
-import Category from "../Components/ProductListingPage/Category/Category"
-import SelectionFilters from "../Components/ProductListingPage/SelectionFilters/SelectionFilters"
-import ProductListing from "../Components/ProductListingPage/ProductListing/ProductListing"
-import TopNavigation from "../Components/ProductListingPage/TopNavigation/TopNavigation"
-import { brandsFilterData } from "../Components/ProductListingPage/SelectionFilters/brandsFilterData"
-import { featuresFilterData } from "../Components/ProductListingPage/SelectionFilters/featuresFilterData"
+import Category from "../components/ProductListingPage/Category/Category"
+import SelectionFilters from "../components/ProductListingPage/SelectionFilters/SelectionFilters"
+import ProductListing from "../components/ProductListingPage/ProductListing/ProductListing"
+import TopNavigation from "../components/ProductListingPage/TopNavigation/TopNavigation"
+import { brandsFilterData } from "../components/ProductListingPage/SelectionFilters/brandsFilterData"
+import { featuresFilterData } from "../components/ProductListingPage/SelectionFilters/featuresFilterData"
 
 function ProductListingPage() {
   return (
