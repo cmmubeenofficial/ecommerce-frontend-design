@@ -10,11 +10,11 @@ function ProductListing() {
     <div className="product-listing-container flex flex-col gap-4.5">
 
       {/* top strip: items count + verified only + featured + grid + bar */}
-      <div className="top-strip-container flex items-center justify-between h-15.5 w-230.25 bg-white border border-[#DEE2E7] rounded-md px-3.5">
-        <h3>12,911 items in Mobile accessory</h3>
+      <div className="top-strip-container flex flex-col md:flex-row items-start md:items-center justify-between h-auto md:h-15.5 w-full bg-white border border-[#DEE2E7] rounded-md px-3.5 py-3 md:py-0">
+        <h3 className="text-sm md:text-base mb-3 md:mb-0">12,911 items in Mobile accessory</h3>
 
         {/* filters and grid container */}
-        <div className="filters-grids-container flex items-center gap-3.25">
+        <div className="filters-grids-container flex flex-wrap items-center gap-3.25">
 
           {/* Verified only */}
           <label htmlFor="verifiedOnly" className="flex items-center gap-2.75">
@@ -24,11 +24,11 @@ function ProductListing() {
 
           {/* dropdown */}
           <div className="dropdown-container relative cursor-pointer">
-            <select className="appearance-none h-10 w-43 border border-[#DEE2E7] pl-2.25 rounded-md cursor-pointer">
+            <select className="appearance-none h-10 w-full md:w-43 border border-[#DEE2E7] pl-2.25 rounded-md cursor-pointer">
               <option value="featured">Featured</option>
             </select>
 
-            <FontAwesomeIcon icon={faAngleDown} size="sm" className="text-[#8B96A5] absolute left-[85%] top-[32%]" />
+            <FontAwesomeIcon icon={faAngleDown} size="sm" className="text-[#8B96A5] absolute right-3 top-1/2 -translate-y-1/2" />
           </div>
 
           {/* grid and bar buttons */}
@@ -47,7 +47,7 @@ function ProductListing() {
       </div>
 
       {/* filters tage + clear filter button */}
-      <div className="filter-tag-clear-filter flex gap-2">
+      <div className="filter-tag-clear-filter flex flex-wrap gap-2">
         {selectedFiltersData.map(data => (
           <SelectedFilters key={data.id} filterName={data.filterName} />
         ))}
@@ -57,14 +57,14 @@ function ProductListing() {
       </div>
 
       {/* product cards */}
-      <div className="product-cards-container flex flex-wrap gap-4.5">
+      <div className="product-cards-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4.5">
         {productCardData.map(productDetail => (
           <ProductCard key={productDetail.id} productDetails={productDetail} />
         ))}
       </div>
 
       {/* bottom pagination */}
-      <div className="pagination-container flex justify-end items-center gap-2 mt-4 w-230.25">
+      <div className="pagination-container flex flex-col md:flex-row justify-start md:justify-end items-center gap-2 mt-4 w-full">
 
         {/* Show count dropdown */}
         <div className="relative">

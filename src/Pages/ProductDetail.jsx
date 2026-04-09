@@ -173,12 +173,12 @@ const ProductDetail = () => {
       {/* 3. TABS AND SIDEBAR */}
       <section className="max-w-7xl mx-auto px-4 mt-8 flex flex-col lg:flex-row gap-6">
         <div className="lg:w-[78%] bg-white border border-[#DEE2E7] rounded-lg">
-          <div className="flex border-b border-[#DEE2E7]">
+          <div className="flex flex-wrap border-b border-[#DEE2E7]">
             {['Description', 'Reviews', 'Shipping', 'About seller'].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`px-6 py-4 font-medium text-base transition-all ${
+                className={`px-4 md:px-6 py-3 md:py-4 font-medium text-sm md:text-base transition-all ${
                   activeTab === tab ? 'border-b-2 border-blue-600 text-blue-600' : 'text-[#8B96A5]'
                 }`}
               >

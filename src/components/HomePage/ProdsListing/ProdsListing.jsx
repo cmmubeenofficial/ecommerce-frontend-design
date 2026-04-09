@@ -6,10 +6,10 @@ function ProdsListing({ title, bgImg, products }) {
     const navigate = useNavigate()
 
     return (
-        <div className="prods-listing-container flex w-295 border border-[#E0E0E0] rounded-md bg-white">
+        <div className="prods-listing-container flex flex-col md:flex-row w-full max-w-7xl mx-auto border border-[#E0E0E0] rounded-md bg-white">
 
-            {/* Source Now Button Card */}
-            <div className={`source-now w-70.75 border-r border-r-[#E0E0E0]
+            {/* Source Now Button Card - hidden on mobile */}
+            <div className={`source-now hidden md:block w-70.75 border-r border-r-[#E0E0E0]
              bg-cover bg-center bg-no-repeat
             pl-4.25`}
 
@@ -23,7 +23,7 @@ function ProdsListing({ title, bgImg, products }) {
             </div>
 
             {/* products listing:  Home and Outdoor */}
-            <div className="prods-listing w-225 grid grid-cols-4">
+            <div className="prods-listing w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
 
                 {products.map(prodData => (
                     <ProdCard key={prodData.id} prodName={prodData.prodName} price={prodData.price} prodImg={prodData.prodImg} />

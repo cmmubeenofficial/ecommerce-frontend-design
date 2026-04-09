@@ -11,15 +11,15 @@ function ProductCard({ id, productDetails }) {
     const navigate = useNavigate()
 
     return (
-        <div key={id} className="product-card h-101.25 w-73.75 border border-[#DEE2E7] bg-white rounded-md cursor-pointer"
+        <div key={id} className="product-card w-full h-auto border border-[#DEE2E7] bg-white rounded-md cursor-pointer"
             onClick={() => navigate("/products/product-details")}
         >
             {/* product image */}
-            <div className="product-image flex justify-center items-center py-6 px-9 border-b border-[#EFF2F4]">
+            <div className="product-image flex justify-center items-center py-4 md:py-6 px-4 md:px-9 border-b border-[#EFF2F4]">
                 <img
                     src={`/image/produc-listing-page/${productImg}.png`}
                     alt={`${description[0]} ${description[1]} image`}
-                    className="h-[202.4px]"
+                    className="w-full h-auto max-h-[202.4px] object-contain"
                 />
             </div>
 

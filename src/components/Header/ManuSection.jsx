@@ -4,7 +4,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 
 function ManuSection() {
   return (
-    <main className="border border-[#E0E0E0] w-full px-20 flex items-center justify-between">
+    <main className="border border-[#E0E0E0] w-full px-4 md:px-10 lg:px-20 flex items-center justify-between hidden md:flex">
       {/* manu links */}
       <section className="manu-links flex items-center h-14 ">
 

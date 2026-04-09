@@ -11,10 +11,10 @@ function ProductListingPage() {
       <TopNavigation />
 
       {/* left and right side layout */}
-      <div className="left-right-container flex gap-9">
+      <div className="left-right-container flex flex-col lg:flex-row gap-4 md:gap-9">
 
-        {/* category + filters section */}
-        <div className="flex flex-col">
+        {/* category + filters section - hidden on mobile, shown as drawer */}
+        <div className="hidden lg:flex flex-col w-60">
           <Category />
 
           {/* filters selection */}
@@ -27,7 +27,9 @@ function ProductListingPage() {
         </div>
 
         {/* product listing */}
-        <ProductListing />
+        <div className="flex-1">
+          <ProductListing />
+        </div>
       </div>
     </>
   )
