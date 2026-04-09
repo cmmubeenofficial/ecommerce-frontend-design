@@ -23,7 +23,7 @@ function ProdsListing({ title, bgImg, products }) {
             </div>
 
             {/* products listing:  Home and Outdoor */}
-            <div className="prods-listing w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+            <div className="prods-listing w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 p-3 md:p-4">
 
                 {products.map(prodData => (
                     <ProdCard key={prodData.id} prodName={prodData.prodName} price={prodData.price} prodImg={prodData.prodImg} />

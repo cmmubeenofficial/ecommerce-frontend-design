@@ -100,43 +100,43 @@ const ProductDetail = () => {
               <span className="text-[#8B96A5] flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-[#DBE2E7]"></div> <FontAwesomeIcon icon={faBasketShopping} /> 154 sold</span>
             </div>
 
-            <div className="bg-[#FFF0DF] p-4 flex rounded-sm border-l-0">
-              <div className="flex-1 pr-4 border-r border-[#BDC4CD]">
-                <p className="text-[#FA3434] text-lg font-bold">$98.00</p>
-                <p className="text-[13px] text-[#606060]">50-100 pcs</p>
+            <div className="bg-[#FFF0DF] p-3 md:p-4 flex flex-col sm:flex-row rounded-sm border-l-0">
+              <div className="flex-1 pr-4 sm:pr-4 sm:border-r border-[#BDC4CD] pb-2 sm:pb-0">
+                <p className="text-base md:text-lg font-bold text-[#FA3434]">$98.00</p>
+                <p className="text-xs md:text-[13px] text-[#606060]">50-100 pcs</p>
               </div>
-              <div className="flex-1 px-6 border-r border-[#BDC4CD]">
-                <p className="text-[#1C1C1C] text-lg font-bold">$90.00</p>
-                <p className="text-[13px] text-[#606060]">100-700 pcs</p>
+              <div className="flex-1 px-6 sm:border-r border-[#BDC4CD] pb-2 sm:pb-0">
+                <p className="text-base md:text-lg font-bold text-[#1C1C1C]">$90.00</p>
+                <p className="text-xs md:text-[13px] text-[#606060]">100-700 pcs</p>
               </div>
-              <div className="flex-1 pl-6">
-                <p className="text-[#1C1C1C] text-lg font-bold">$78.00</p>
-                <p className="text-[13px] text-[#606060]">700+ pcs</p>
+              <div className="flex-1 pl-6 sm:pl-6">
+                <p className="text-base md:text-lg font-bold text-[#1C1C1C]">$78.00</p>
+                <p className="text-xs md:text-[13px] text-[#606060]">700+ pcs</p>
               </div>
             </div>
 
-            <div className="space-y-4 pt-2 text-base">
-              <div className="grid grid-cols-[130px_1fr] border-b border-[#EEE] pb-3">
+            <div className="space-y-3 md:space-y-4 pt-1 md:pt-2 text-sm md:text-base">
+              <div className="grid grid-cols-[100px_1fr] sm:grid-cols-[130px_1fr] border-b border-[#EEE] pb-2 md:pb-3">
                 <span className="text-[#8B96A5]">Price:</span> <span className="text-[#505050]">Negotiable</span>
               </div>
-              <div className="grid grid-cols-[130px_1fr] border-b border-[#EEE] pb-3">
+              <div className="grid grid-cols-[100px_1fr] sm:grid-cols-[130px_1fr] border-b border-[#EEE] pb-2 md:pb-3">
                 <span className="text-[#8B96A5]">Type:</span> <span className="text-[#505050]">Classic shoes</span>
               </div>
-              <div className="grid grid-cols-[130px_1fr] border-b border-[#EEE] pb-3">
+              <div className="grid grid-cols-[100px_1fr] sm:grid-cols-[130px_1fr] border-b border-[#EEE] pb-2 md:pb-3">
                 <span className="text-[#8B96A5]">Material:</span> <span className="text-[#505050]">Plastic material</span>
               </div>
-              <div className="grid grid-cols-[130px_1fr] border-b border-[#EEE] pb-3">
+              <div className="grid grid-cols-[100px_1fr] sm:grid-cols-[130px_1fr] border-b border-[#EEE] pb-2 md:pb-3">
                 <span className="text-[#8B96A5]">Design:</span> <span className="text-[#505050]">Modern nice</span>
               </div>
               
-              <div className="grid grid-cols-[130px_1fr] border-b border-[#EEE] pb-3 pt-1">
+              <div className="grid grid-cols-[100px_1fr] sm:grid-cols-[130px_1fr] border-b border-[#EEE] pb-2 md:pb-3 pt-1">
                 <span className="text-[#8B96A5]">Customization:</span> 
                 <span className="text-[#505050]">Customized logo and design custom packages</span>
               </div>
-              <div className="grid grid-cols-[130px_1fr] border-b border-[#EEE] pb-3">
+              <div className="grid grid-cols-[100px_1fr] sm:grid-cols-[130px_1fr] border-b border-[#EEE] pb-2 md:pb-3">
                 <span className="text-[#8B96A5]">Protection:</span> <span className="text-[#505050]">Refund Policy</span>
               </div>
-              <div className="grid grid-cols-[130px_1fr] pb-3">
+              <div className="grid grid-cols-[100px_1fr] sm:grid-cols-[130px_1fr] pb-2 md:pb-3">
                 <span className="text-[#8B96A5]">Warranty:</span> <span className="text-[#505050]">2 years full warranty</span>
               </div>
             </div>
@@ -178,7 +178,7 @@ const ProductDetail = () => {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`px-4 md:px-6 py-3 md:py-4 font-medium text-sm md:text-base transition-all ${
+                className={`px-3 sm:px-4 md:px-6 py-2.5 sm:py-3 md:py-4 font-medium text-xs sm:text-sm md:text-base transition-all ${
                   activeTab === tab ? 'border-b-2 border-blue-600 text-blue-600' : 'text-[#8B96A5]'
                 }`}
               >
@@ -186,7 +186,7 @@ const ProductDetail = () => {
               </button>
             ))}
           </div>
-          <div className="p-6 text-[#505050] text-base leading-relaxed space-y-6">
+          <div className="p-3 sm:p-4 md:p-6 text-[#505050] text-sm sm:text-base leading-relaxed space-y-4 md:space-y-6">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             
             <div className="max-w-xl">

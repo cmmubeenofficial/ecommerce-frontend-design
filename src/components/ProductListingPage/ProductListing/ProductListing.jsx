@@ -10,21 +10,21 @@ function ProductListing() {
     <div className="product-listing-container flex flex-col gap-4.5">
 
       {/* top strip: items count + verified only + featured + grid + bar */}
-      <div className="top-strip-container flex flex-col md:flex-row items-start md:items-center justify-between h-auto md:h-15.5 w-full bg-white border border-[#DEE2E7] rounded-md px-3.5 py-3 md:py-0">
-        <h3 className="text-sm md:text-base mb-3 md:mb-0">12,911 items in Mobile accessory</h3>
+      <div className="top-strip-container flex flex-col md:flex-row items-start md:items-center justify-between h-auto md:h-15.5 w-full bg-white border border-[#DEE2E7] rounded-md px-3 sm:px-3.5 py-3 md:py-0 gap-3 md:gap-0">
+        <h3 className="text-xs sm:text-sm md:text-base">12,911 items in Mobile accessory</h3>
 
         {/* filters and grid container */}
-        <div className="filters-grids-container flex flex-wrap items-center gap-3.25">
+        <div className="filters-grids-container flex flex-wrap items-center gap-2.5 sm:gap-3 md:gap-3.25">
 
           {/* Verified only */}
-          <label htmlFor="verifiedOnly" className="flex items-center gap-2.75">
-            <input type="checkbox" className="h-5 w-5" />
+          <label htmlFor="verifiedOnly" className="flex items-center gap-2 md:gap-2.75 text-sm">
+            <input type="checkbox" className="h-4 w-4 md:h-5 md:w-5" />
             Verified only
           </label>
 
           {/* dropdown */}
           <div className="dropdown-container relative cursor-pointer">
-            <select className="appearance-none h-10 w-full md:w-43 border border-[#DEE2E7] pl-2.25 rounded-md cursor-pointer">
+            <select className="appearance-none h-10 w-full md:w-43 border border-[#DEE2E7] pl-2.25 rounded-md cursor-pointer text-sm">
               <option value="featured">Featured</option>
             </select>
 
@@ -47,28 +47,28 @@ function ProductListing() {
       </div>
 
       {/* filters tage + clear filter button */}
-      <div className="filter-tag-clear-filter flex flex-wrap gap-2">
+      <div className="filter-tag-clear-filter flex flex-wrap items-center gap-2">
         {selectedFiltersData.map(data => (
           <SelectedFilters key={data.id} filterName={data.filterName} />
         ))}
 
         {/* clear filter button */}
-        <button className="text-[#0D6EFD] pl-2 cursor-pointer">Clear all filter</button>
+        <button className="text-[#0D6EFD] pl-2 cursor-pointer text-sm">Clear all filter</button>
       </div>
 
       {/* product cards */}
-      <div className="product-cards-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4.5">
+      <div className="product-cards-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-4.5">
         {productCardData.map(productDetail => (
           <ProductCard key={productDetail.id} productDetails={productDetail} />
         ))}
       </div>
 
       {/* bottom pagination */}
-      <div className="pagination-container flex flex-col md:flex-row justify-start md:justify-end items-center gap-2 mt-4 w-full">
+      <div className="pagination-container flex flex-col md:flex-row justify-start md:justify-end items-center gap-3 mt-4 w-full">
 
         {/* Show count dropdown */}
         <div className="relative">
-          <select className="appearance-none h-10 w-32 border border-[#DEE2E7] rounded-md px-3 bg-white cursor-pointer pr-8">
+          <select className="appearance-none h-10 w-32 border border-[#DEE2E7] rounded-md px-3 bg-white cursor-pointer pr-8 text-sm">
             <option value="10">Show 10</option>
             <option value="20">Show 20</option>
           </select>
@@ -88,13 +88,13 @@ function ProductListing() {
 
           {/* Pages */}
           <ul className="flex items-center">
-            <li className="h-10 w-11 flex items-center justify-center border-r border-[#DEE2E7] bg-[#EFF2F4] font-semibold text-[#1C1C1C]">
+            <li className="h-10 w-11 flex items-center justify-center border-r border-[#DEE2E7] bg-[#EFF2F4] font-semibold text-[#1C1C1C] text-sm">
               1
             </li>
-            <li className="h-10 w-11 flex items-center justify-center border-r border-[#DEE2E7] hover:bg-gray-50 cursor-pointer">
+            <li className="h-10 w-11 flex items-center justify-center border-r border-[#DEE2E7] hover:bg-gray-50 cursor-pointer text-sm">
               2
             </li>
-            <li className="h-10 w-11 flex items-center justify-center border-r border-[#DEE2E7] hover:bg-gray-50 cursor-pointer">
+            <li className="h-10 w-11 flex items-center justify-center border-r border-[#DEE2E7] hover:bg-gray-50 cursor-pointer text-sm">
               3
             </li>
           </ul>
